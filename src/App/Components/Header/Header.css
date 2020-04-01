@@ -7,11 +7,18 @@
 
 .logo {
   display: flex;
-  font-size: 23px; }
+  font-size: 23px;
+  cursor: pointer; }
   .logo b {
     font-family: Arial, Helvetica, sans-serif; }
   .logo .brand-tail {
     visibility: hidden; }
+  .logo a {
+    text-decoration: none; }
+    .logo a span {
+      color: #333333; }
+  .logo:hover .brand-tail {
+    visibility: visible; }
 
 .menu {
   font-size: 13px;

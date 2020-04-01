@@ -1,11 +1,64 @@
-.home {
-    width:100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: slategrey;
-    color:white;
-    font-size:5rem;
-    font-weight:700;
+@import '../Variables/colors';
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+
+    .description {
+        margin-right: 124px;
+
+        .title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 77px;
+            color: $gray1;
+            padding-top: 174px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 150%;
+            color: $gray3;
+        }
+    }
+
+    .ourvision {
+        width: 35vw;
+        background-image: url(/static/media/pic-vision1.c9495237.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: center;
+        // display: flex;
+        // &-title {
+        //     transform: rotate(90deg);
+        //     max-height: 437px;
+        //     width: 437px;
+        //     font-family: Arial, Helvetica, sans-serif;
+        //     font-style: normal;
+        //     font-weight: 600;
+        //     font-size: 87px;
+        //     line-height: 115px;
+        //     color: #bdbdbd;
+        // }
+    }
+
+    .choosenewbrands {
+        margin-left: 24px;
+        padding-top: 438px;
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 150%;
+            color: $gray3;
+        }
+    }
 }

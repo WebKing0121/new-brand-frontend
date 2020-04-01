@@ -5,12 +5,14 @@ import Footer from './Components/Footer/Footer';
 import './App.css';
 
 const App = () =>(
-    <div className="main-wrapper">
-      <Header />
-      <div className={"body"}>
-        <Routes />
+    <div className = "main-wrapper">
+      <div className = "container">
+        <Header />
+        <div className={"body"}>
+          <Routes />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
     );
 

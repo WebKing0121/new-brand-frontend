@@ -1,2 +1,6 @@
 .main-wrapper {
-  padding: 0 70px; }
+  padding: 0 70px;
+  display: flex;
+  justify-content: center; }
+  .main-wrapper .container {
+    max-width: 1439px; }

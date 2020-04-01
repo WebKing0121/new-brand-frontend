@@ -5,11 +5,19 @@ function Header() {
   return (
     <div className = "header">
       <div className = "logo">
-        <span>N/<b className = "brand">B</b></span>
-        <span className="brand-tail">rands</span>
+        <a href = "#">
+          <span>N/<b className = "brand">B</b></span>
+          <span className="brand-tail">rands</span>
+        </a>
       </div>
       <div className = "menu">
-        <span>Home /</span>
+        <div className = "dropdown">
+          <button class = "dropdown-content">
+            <a href = "#">Link1</a>
+            <a href = "#">Link2</a>
+            <a href = "#">Link3</a>
+          </button>
+        </div>
       </div>
       <div className = "group">
         <span>How it work</span>
