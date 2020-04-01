@@ -1,0 +1,41 @@
+@import '../../Variables/colors';
+.header {
+  display: flex;
+  height: 76px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  font-size: 23px;
+  
+  b{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .brand-tail {
+    visibility: hidden;
+  }
+}
+.menu {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $gray1;
+}
+.group {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $gray;
+}
+.en {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $gray1;
+}
+.auth {
+  display: flex;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $gray1;
+}

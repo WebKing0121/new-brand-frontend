@@ -1,17 +1,16 @@
 import React from 'react';
 import Routes from './Routes';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import './App.css';
 
 const App = () =>(
     <div className="main-wrapper">
-      <div className="header-container">
-        This is header
-      </div>
+      <Header />
       <div className={"body"}>
         <Routes />
       </div>
-      <div className="footer-container">
-        This is footer
-      </div>
+      <Footer />
     </div>
     );
 
