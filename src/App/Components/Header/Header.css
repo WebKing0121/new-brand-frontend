@@ -33,20 +33,19 @@
 .d-inline-block .dropdown-menu {
   padding: 0;
   border: none;
-  line-height: 16px; }
+  line-height: 16px;
+  top: 1px; }
   .d-inline-block .dropdown-menu .dropdown-item {
     padding: 0;
-    margin-bottom: 7px; }
+    margin-bottom: 6px; }
 
 .menu {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   color: #333333; }
 
-.group {
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #cccccc; }
+.group .btn {
+  color: gray; }
 
 .en {
   font-size: 14px;
