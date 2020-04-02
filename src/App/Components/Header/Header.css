@@ -44,8 +44,10 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #333333; }
 
-.group .btn {
-  color: gray; }
+.group {
+  padding-right: 70px; }
+  .group .btn {
+    color: gray; }
 
 .en {
   font-size: 14px;

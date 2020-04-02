@@ -47,7 +47,7 @@
     .footer-social-link-group-links div {
       display: flex;
       color: #4f4f4f;
-      height: 23px;
+      line-height: 23px;
       padding-bottom: 3px;
       font-size: 12px;
       align-items: center; }

@@ -156,9 +156,10 @@
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
-      line-height: 17px;
+      line-height: 43px;
       letter-spacing: 0.02em;
-      color: #828282; }
+      color: #828282;
+      margin-bottom: 20px; }
     .challenge-part-header-title {
       font-family: Gelion, sans-serif;
       font-style: normal;
@@ -203,7 +204,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-        line-height: 17px;
+        line-height: 43px;
         letter-spacing: 0.02em;
         color: #828282; }
       .passer-part-header-title {
