@@ -256,7 +256,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 87px; }
+  margin-top: 87px;
+  margin-bottom: 166px; }
   .participate-group-one {
     display: flex;
     grid-template-columns: repeat();
