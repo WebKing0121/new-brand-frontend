@@ -1,0 +1,321 @@
+@import "../../Variables/colors";
+
+.hero {
+  display: flex;
+  margin-top: 44px;
+  justify-content: space-between;
+
+  &-ourstory {
+
+    &-title {
+      padding: 130px 0 20px 0;
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 77px;
+      color: $gray1;
+    }
+
+    &-description {
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: $gray3;
+    }
+  }
+
+  &-ourvision {
+    position: relative;
+    padding-left: 124px;
+
+    &-img {
+      z-index: 1;
+    }
+    &-label {
+      position: absolute;
+      top: 314px;
+      right: -248px;
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 96px;
+      line-height: 115px;
+      color: #BDBDBD;
+      opacity: 0.53;
+      transform: rotate(90deg);
+    }
+  }
+
+  &-choosenewbrands {
+    padding-left: 130px;
+    padding-top: 394px;
+
+    &-title {
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 23px;
+      color: #333333;
+    }
+
+    p {
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: $gray3;
+    }
+  }
+}
+
+.report-mark {
+  font-size: 170px;
+  color: #cecece;
+  opacity: 0.12;
+  line-height: 168px;
+}
+
+.report-part {
+  margin-top: 262px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+
+  .report-description {
+    margin-top: -140px;
+    display: flex;
+    justify-content: center;
+    font-family: Gelion, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 168%;
+    color: $gray1;
+
+    p {
+      max-width: 972px;
+    }
+  }
+
+  .report-auth {
+    .name {
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      color: $gray2;
+    }
+
+    .job {
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 9px;
+      line-height: 11px;
+      color: gray;
+    }
+  }
+}
+
+.founder {
+  display: flex;
+  margin-top: 316px;
+
+  &-info {
+    margin-top: 219px;
+    max-width: 310px;
+    margin-left: 130px;
+
+    &-name {
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 43px;
+      color: $gray1;
+    }
+
+    &-detail {
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: gray;
+    }
+  }
+}
+
+.director {
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-between;
+
+  &-info {
+    margin-top: 219px;
+    max-width: 310px;
+    margin-right: 130px;
+    margin-left: 110px;
+
+    &-name {
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 43px;
+      color: $gray1;
+    }
+
+    &-detail {
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: gray;
+    }
+  }
+}
+
+.challenge-part {
+  margin-top: 310px;
+  margin-left: 38px;
+  margin-right: 37px;
+  &-title {
+    max-width: 447px;
+    .challenge-txt {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.02em;
+      color: $gray3;
+    }
+
+    .challenge-title {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+      color: $gray1;
+    }
+  }
+
+  &-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+
+    .challenge-part-one {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 35px;
+      align-items: center;
+      color: #777777;
+      margin-right: 120px;
+    }
+
+    .challenge-part-two {
+      margin-left: 41px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: justify;
+      color: #777777;
+    }
+  }
+}
+
+.passer-part {
+  display: flex;
+  margin-top: 259px;
+
+  &-description {
+    margin-top: 111px;
+    margin-left: 130px;
+
+    &-info {
+      font-family: Arial, Helveticpxa, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #777777;
+      margin-right: 116px;
+    }
+  }
+}
+
+.participate-part {
+  text-align: center;
+  margin-top: 254px;
+
+  &-title {
+    margin-top: -170px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: $gray1;
+
+    &-txt {
+      margin-bottom: 19px;
+    }
+  }
+
+  &-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #777777;
+    display: flex;
+    justify-content: center;
+
+    span {
+      max-width: 464px;
+    }
+  }
+}
+
+.participate-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &-one {
+    display: flex;
+    grid-template-columns: repeat();
+    width: 100%;
+    max-width: 778px;
+    height: 52px;
+    margin-top: 100px;
+    justify-content: space-between;
+  }
+
+  &-two {
+    display: flex;
+    width: 570px;
+    height: 50px;
+    margin-top: 77px;
+    justify-content: space-between;
+  }
+}
