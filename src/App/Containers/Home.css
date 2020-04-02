@@ -1,7 +1,11 @@
+.homepage {
+  background-color: #e5e5e5; }
+
 .hero {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 44px; }
   .hero .description {
     margin-right: 124px; }
     .hero .description .title {
@@ -27,8 +31,15 @@
     width: 100%;
     background-position: center; }
   .hero .choosenewbrands {
-    margin-left: 24px;
+    margin-left: 54px;
     padding-top: 438px; }
+    .hero .choosenewbrands .title1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 23px;
+      color: #333333; }
     .hero .choosenewbrands p {
       font-family: Arial, Helvetica, sans-serif;
       font-style: normal;
@@ -36,3 +47,213 @@
       font-size: 14px;
       line-height: 150%;
       color: #828282; }
+
+.report-mark {
+  font-size: 170px;
+  color: #cecece;
+  opacity: 0.12;
+  line-height: 168px; }
+
+.report-part {
+  margin-top: 262px;
+  display: block;
+  text-align: center;
+  justify-content: center; }
+  .report-part .report-description {
+    margin-top: -140px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 168%;
+    color: #333333; }
+    .report-part .report-description p {
+      max-width: 972px; }
+  .report-part .report-auth .name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4f4f4f; }
+  .report-part .report-auth .job {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 11px;
+    color: gray; }
+
+.user1 {
+  display: flex;
+  margin-top: 316px; }
+  .user1 .user1-img {
+    background-image: url(../Assets/images/user1-img.png);
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 630px; }
+  .user1 .user-info {
+    margin-top: 219px;
+    max-width: 310px;
+    margin-left: 130px; }
+
+.user-info-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 43px;
+  color: #333333; }
+
+.user-info-detail {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: gray; }
+
+.user2 {
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-between; }
+  .user2 .user2-img {
+    background-image: url(../Assets/images/user2-img.png);
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 630px; }
+  .user2 .user2-info {
+    margin-top: 219px;
+    max-width: 310px;
+    margin-right: 130px;
+    margin-left: 110px; }
+
+.challenge-part {
+  margin-top: 310px;
+  margin-left: 38px;
+  margin-right: 37px; }
+  .challenge-part-title {
+    max-width: 447px; }
+    .challenge-part-title .challenge-txt {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.02em;
+      color: #828282; }
+    .challenge-part-title .challenge-title {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+      color: #333333; }
+  .challenge-part-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between; }
+    .challenge-part-group .challenge-part-one {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 35px;
+      align-items: center;
+      color: #777777;
+      margin-right: 120px; }
+    .challenge-part-group .challenge-part-two {
+      margin-left: 41px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: justify;
+      color: #777777; }
+
+.passer-part {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-top: 259px; }
+  .passer-part-img {
+    margin-left: 110px;
+    background-image: url("../Assets/images/passer-img.jpg");
+    background-repeat: no-repeat;
+    width: 530px;
+    height: 714px; }
+  .passer-part-description {
+    margin-top: 111px;
+    margin-left: 130px; }
+    .passer-part-description-info {
+      font-family: Arial, Helveticpxa, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #777777;
+      margin-right: 116px; }
+
+.participate-part {
+  text-align: center;
+  margin-top: 254px; }
+  .participate-part-title {
+    margin-top: -170px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #333333; }
+    .participate-part-title-txt {
+      margin-bottom: 19px; }
+  .participate-part-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #777777;
+    display: flex;
+    justify-content: center; }
+    .participate-part-description span {
+      max-width: 464px; }
+
+.participate-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .participate-group-icon {
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100px; }
+  .participate-group-one {
+    display: flex;
+    grid-template-columns: repeat();
+    width: 100%;
+    max-width: 778px;
+    height: 52px;
+    margin-top: 100px;
+    justify-content: space-between; }
+  .participate-group-two {
+    display: flex;
+    width: 570px;
+    height: 50px;
+    margin-top: 77px;
+    justify-content: space-between; }
+  .participate-group-a {
+    background-image: url("../Assets/images/image_25.png"); }
+  .participate-group-b {
+    background-image: url("../Assets/images/image_24.png"); }
+  .participate-group-c {
+    background-image: url("../Assets/images/image_31.png"); }
+  .participate-group-d {
+    background-image: url("../Assets/images/image_27.png"); }
+  .participate-group-e {
+    background-image: url("../Assets/images/image_28.png"); }
