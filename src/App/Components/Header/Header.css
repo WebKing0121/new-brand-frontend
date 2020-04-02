@@ -20,6 +20,11 @@
   .logo:hover .brand-tail {
     visibility: visible; }
 
+.d-inline-block button {
+  border: none;
+  background-color: white;
+  color: #333333; }
+
 .menu {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;

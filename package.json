@@ -2,21 +2,31 @@
   "name": "new-brands",
   "description": "New Brands Front-End Project",
   "author": "Colin",
-  "keywords": ["create", "react", "app", "sass", "scss", "redux", "router"],
+  "keywords": [
+    "create",
+    "react",
+    "app",
+    "sass",
+    "scss",
+    "redux",
+    "router"
+  ],
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.0.2",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-redux": "^5.0.6",
-    "react-router": "^4.1.2",
-    "react-router-dom": "^4.1.2",
-    "react-scripts": "1.0.11",
-    "redux": "^3.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "reactstrap": "^8.4.1",
+    "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start-js": "react-scripts start",
@@ -26,5 +36,17 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
