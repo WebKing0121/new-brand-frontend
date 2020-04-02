@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './Header.css';
 
-const PageDropDown = ({ label, onSelected, items }) => {
+const PageDropDown = ({ label, items }) => {
   const [ isOpened, openDropDown ] = useState(false);
 
   const onMouseOver = () => {
@@ -34,7 +34,7 @@ const PageDropDown = ({ label, onSelected, items }) => {
         </DropdownToggle>
         <DropdownMenu>
           {items.map(item => (
-            <DropdownItem onClick={() => onSelected(item)}>
+            <DropdownItem >
               {item}
             </DropdownItem>
           ))}
@@ -69,8 +69,6 @@ export default class Header extends React.Component {
     });
   };
 
-  
-
   render() {  
     return (
       <div className = "header">
@@ -81,10 +79,10 @@ export default class Header extends React.Component {
           </a>
         </div>
         <div className = "menu">
-          <PageDropDown items={['Home/', 'Our story', 'Newsroom']} onSelected = {this.setHomePage} label={this.state.homeValue}/>
+          <PageDropDown items={['Our story', 'Newsroom']} label="Home /"/>
         </div>
         <div className = "group">
-          <PageDropDown items={['How it work', 'Pricing', 'Developers']} onSelected = {this.setWorkPage} label={this.state.workValue} />
+          <PageDropDown items={['Pricing', 'Developers']} label="How it work"/>
         </div>
         <div className = "en">
           <span>/ En</span>

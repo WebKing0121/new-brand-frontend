@@ -34,10 +34,28 @@
   }
 }
 .d-inline-block {
-  button {
+  .btn {
+    padding: 0;
     border: none;
     background-color: white;
     color: $gray1;
+
+    &:hover {
+      color: $gray1;
+      background-color: white;
+      border: none;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    border: none;
+    line-height: 16px;
+
+    .dropdown-item {
+      padding: 0;
+      margin-bottom: 7px;
+    }
   }
 }
 .menu {

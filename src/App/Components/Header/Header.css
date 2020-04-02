@@ -20,10 +20,23 @@
   .logo:hover .brand-tail {
     visibility: visible; }
 
-.d-inline-block button {
+.d-inline-block .btn {
+  padding: 0;
   border: none;
   background-color: white;
   color: #333333; }
+  .d-inline-block .btn:hover {
+    color: #333333;
+    background-color: white;
+    border: none; }
+
+.d-inline-block .dropdown-menu {
+  padding: 0;
+  border: none;
+  line-height: 16px; }
+  .d-inline-block .dropdown-menu .dropdown-item {
+    padding: 0;
+    margin-bottom: 7px; }
 
 .menu {
   font-size: 13px;
