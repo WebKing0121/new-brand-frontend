@@ -6,7 +6,6 @@
   justify-content: space-between;
 
   &-ourstory {
-
     &-title {
       padding: 130px 0 20px 0;
       font-family: Gelion, sans-serif;
@@ -44,7 +43,7 @@
       font-weight: 600;
       font-size: 96px;
       line-height: 115px;
-      color: #BDBDBD;
+      color: #bdbdbd;
       opacity: 0.53;
       transform: rotate(90deg);
     }
@@ -61,6 +60,7 @@
       font-size: 24px;
       line-height: 23px;
       color: #333333;
+      padding-bottom: 15px;
     }
 
     p {
@@ -82,12 +82,12 @@
 }
 
 .report-part {
-  margin-top: 262px;
+  margin-top: 300px;
   display: block;
   text-align: center;
   justify-content: center;
 
-  .report-description {
+  &-description {
     margin-top: -140px;
     display: flex;
     justify-content: center;
@@ -95,7 +95,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
-    line-height: 168%;
+    line-height: 40px;
     color: $gray1;
 
     p {
@@ -103,8 +103,10 @@
     }
   }
 
-  .report-auth {
-    .name {
+  &-auth {
+    margin-top: 84px;
+
+    &-name {
       font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -113,7 +115,7 @@
       color: $gray2;
     }
 
-    .job {
+    &-job {
       font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -126,7 +128,7 @@
 
 .founder {
   display: flex;
-  margin-top: 316px;
+  margin-top: 300px;
 
   &-info {
     margin-top: 219px;
@@ -137,7 +139,7 @@
       font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: 600;
-      font-size: 34px;
+      font-size: 36px;
       line-height: 43px;
       color: $gray1;
     }
@@ -147,8 +149,13 @@
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
-      line-height: 150%;
+      line-height: 17px;
       color: gray;
+      margin-top: 11px;
+
+      &-job {
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -180,6 +187,10 @@
       font-size: 14px;
       line-height: 150%;
       color: gray;
+
+      &-job {
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -188,9 +199,11 @@
   margin-top: 310px;
   margin-left: 38px;
   margin-right: 37px;
-  &-title {
+
+  &-header {
     max-width: 447px;
-    .challenge-txt {
+
+    &-txt {
       font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -200,7 +213,7 @@
       color: $gray3;
     }
 
-    .challenge-title {
+    &-title {
       font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: 600;
@@ -214,8 +227,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
+    margin-top: 40px;
 
-    .challenge-part-one {
+    &-mention {
       font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: 300;
@@ -226,7 +240,7 @@
       margin-right: 120px;
     }
 
-    .challenge-part-two {
+    &-description {
       margin-left: 41px;
       font-family: Gelion, sans-serif;
       font-style: normal;
@@ -239,15 +253,38 @@
   }
 }
 
-.passer-part {
+.passer {
   display: flex;
-  margin-top: 259px;
+  margin-top: 280px;
 
-  &-description {
+  &-part {
     margin-top: 111px;
     margin-left: 130px;
 
-    &-info {
+    &-header {
+      max-width: 447px;
+  
+      &-txt {
+        font-family: Gelion, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+        color: $gray3;
+      }
+  
+      &-title {
+        font-family: Gelion, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 43px;
+        color: $gray1;
+      }
+    }
+
+    &-description {
       font-family: Arial, Helveticpxa, sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -255,6 +292,7 @@
       line-height: 21px;
       color: #777777;
       margin-right: 116px;
+      margin-top: 20px;
     }
   }
 }
@@ -301,6 +339,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 87px;
 
   &-one {
     display: flex;
@@ -308,7 +347,6 @@
     width: 100%;
     max-width: 778px;
     height: 52px;
-    margin-top: 100px;
     justify-content: space-between;
   }
 

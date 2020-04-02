@@ -5,54 +5,53 @@
   padding-bottom: 120px;
   padding-left: 108px;
   font-family: Arial, Helvetica, sans-serif; }
-  .footer .logo-part {
-    padding-top: 17px;
+  .footer-logo-part {
+    padding-top: 20px;
     display: block; }
-    .footer .logo-part .logo {
+    .footer-logo-part-logo {
       font-size: 22px; }
-    .footer .logo-part .social-link-icons {
+    .footer-logo-part-social-links {
       display: flex;
       height: 10px;
       max-width: 80px;
       justify-content: space-between;
       color: #e0e0e0;
-      margin-top: 14px;
-      margin-bottom: 26px; }
-      .footer .logo-part .social-link-icons .linkedin-icon {
+      margin-top: 16px;
+      margin-bottom: 27px; }
+      .footer-logo-part-social-links-linkedin {
         font-size: 10px; }
-      .footer .logo-part .social-link-icons div {
+      .footer-logo-part-social-links div {
         display: flex;
         align-items: center;
         justify-content: center; }
-      .footer .logo-part .social-link-icons i {
+      .footer-logo-part-social-links i {
         font-size: 10px; }
-    .footer .logo-part .copyright {
-      color: #333333;
-      font-size: 8px;
-      max-width: 166px; }
-      .footer .logo-part .copyright i {
+    .footer-logo-part-copyright {
+      font-size: 9px;
+      line-height: 11px;
+      max-width: 166px;
+      color: #333333; }
+      .footer-logo-part-copyright i {
         font-size: 6px;
         padding-right: 3px; }
-  .footer .social-link-group {
+  .footer-social-link-group {
     padding-top: 5px;
     padding-left: 50px; }
-    .footer .social-link-group .header {
-      height: 23px;
-      padding-bottom: 20px;
+    .footer-social-link-group-header {
       font-size: 13px;
       font-style: normal;
-      color: #333333; }
-    .footer .social-link-group .list-items div {
+      line-height: 23px;
+      color: #333333;
+      padding-bottom: 20px; }
+    .footer-social-link-group-links div {
       display: flex;
       color: #4f4f4f;
       height: 23px;
       padding-bottom: 3px;
       font-size: 12px;
       align-items: center; }
-  .footer .choose-country {
-    padding-left: 50px;
-    background-image: url("../../Assets/images/choose-country.png");
-    background-repeat: no-repeat; }
+  .footer-choose-country {
+    padding-left: 50px; }
   .footer a {
     text-decoration: none; }
     .footer a span {

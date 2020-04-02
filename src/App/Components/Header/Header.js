@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './Header.css';
-import { userou } from 'react-router-dom'
 
 const PageDropDown = ({ label, onSelected, items }) => {
   const [ isOpened, openDropDown ] = useState(false);
@@ -17,7 +16,7 @@ const PageDropDown = ({ label, onSelected, items }) => {
   const toggle = () => {
     openDropDown(!isOpened)
   }
-  if(label==undefined) {
+  if(label===undefined) {
     label = items[0];
   }
 
@@ -35,7 +34,9 @@ const PageDropDown = ({ label, onSelected, items }) => {
         </DropdownToggle>
         <DropdownMenu>
           {items.map(item => (
-            <DropdownItem onClick={() => onSelected(item)}>{item}</DropdownItem>
+            <DropdownItem onClick={() => onSelected(item)}>
+              {item}
+            </DropdownItem>
           ))}
         </DropdownMenu>
       </Dropdown>
@@ -49,23 +50,21 @@ export default class Header extends React.Component {
     this.state = {
       homeOpen: false,
       pricingOpen: false,
-      homeLinkValue: "Home /",
-      pricingLinkValue: "How it work"
     };
   }
 
   setHomePage = (value) => {
-    const { dropdownOpen } = this.state;
+    const { homeOpen } = this.state;
     this.setState({
-      dropdownOpen: !dropdownOpen,
+      homeOpen: !homeOpen,
       homeValue: value
     });
   };
 
   setWorkPage = (value) => {
-    const { dropdownOpen } = this.state;
+    const { pricingOpen } = this.state;
     this.setState({
-      dropdownOpen: !dropdownOpen,
+      pricingOpen: !pricingOpen,
       workValue: value
     });
   };
@@ -76,7 +75,7 @@ export default class Header extends React.Component {
     return (
       <div className = "header">
         <div className = "logo">
-          <a href = "#">
+          <a href = "/">
             <span>N/<b className = "brand">B</b></span>
             <span className="brand-tail">rands</span>
           </a>
@@ -92,10 +91,10 @@ export default class Header extends React.Component {
         </div>
         <div className = "auth">
           <div className = "login">
-            <span>Login / </span>
+            <span>Login /</span>
           </div>
           <div className = "register">
-            <span> Register</span>
+            <span>&nbsp;Register</span>
           </div>
         </div>
       </div>

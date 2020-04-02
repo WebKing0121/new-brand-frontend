@@ -32,7 +32,7 @@
       font-weight: 600;
       font-size: 96px;
       line-height: 115px;
-      color: #BDBDBD;
+      color: #bdbdbd;
       opacity: 0.53;
       transform: rotate(90deg); }
   .hero-choosenewbrands {
@@ -44,7 +44,8 @@
       font-weight: 500;
       font-size: 24px;
       line-height: 23px;
-      color: #333333; }
+      color: #333333;
+      padding-bottom: 15px; }
     .hero-choosenewbrands p {
       font-family: Gelion, sans-serif;
       font-style: normal;
@@ -60,11 +61,11 @@
   line-height: 168px; }
 
 .report-part {
-  margin-top: 262px;
+  margin-top: 300px;
   display: block;
   text-align: center;
   justify-content: center; }
-  .report-part .report-description {
+  .report-part-description {
     margin-top: -140px;
     display: flex;
     justify-content: center;
@@ -72,28 +73,30 @@
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
-    line-height: 168%;
+    line-height: 40px;
     color: #333333; }
-    .report-part .report-description p {
+    .report-part-description p {
       max-width: 972px; }
-  .report-part .report-auth .name {
-    font-family: Gelion, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    color: #4f4f4f; }
-  .report-part .report-auth .job {
-    font-family: Gelion, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 9px;
-    line-height: 11px;
-    color: gray; }
+  .report-part-auth {
+    margin-top: 84px; }
+    .report-part-auth-name {
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      color: #4f4f4f; }
+    .report-part-auth-job {
+      font-family: Gelion, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 9px;
+      line-height: 11px;
+      color: gray; }
 
 .founder {
   display: flex;
-  margin-top: 316px; }
+  margin-top: 300px; }
   .founder-info {
     margin-top: 219px;
     max-width: 310px;
@@ -102,7 +105,7 @@
       font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: 600;
-      font-size: 34px;
+      font-size: 36px;
       line-height: 43px;
       color: #333333; }
     .founder-info-detail {
@@ -110,8 +113,11 @@
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
-      line-height: 150%;
-      color: gray; }
+      line-height: 17px;
+      color: gray;
+      margin-top: 11px; }
+      .founder-info-detail-job {
+        margin-bottom: 20px; }
 
 .director {
   display: flex;
@@ -136,14 +142,16 @@
       font-size: 14px;
       line-height: 150%;
       color: gray; }
+      .director-info-detail-job {
+        margin-bottom: 20px; }
 
 .challenge-part {
   margin-top: 310px;
   margin-left: 38px;
   margin-right: 37px; }
-  .challenge-part-title {
+  .challenge-part-header {
     max-width: 447px; }
-    .challenge-part-title .challenge-txt {
+    .challenge-part-header-txt {
       font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -151,7 +159,7 @@
       line-height: 17px;
       letter-spacing: 0.02em;
       color: #828282; }
-    .challenge-part-title .challenge-title {
+    .challenge-part-header-title {
       font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: 600;
@@ -161,8 +169,9 @@
   .challenge-part-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-between; }
-    .challenge-part-group .challenge-part-one {
+    justify-content: space-between;
+    margin-top: 40px; }
+    .challenge-part-group-mention {
       font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: 300;
@@ -171,7 +180,7 @@
       align-items: center;
       color: #777777;
       margin-right: 120px; }
-    .challenge-part-group .challenge-part-two {
+    .challenge-part-group-description {
       margin-left: 41px;
       font-family: Gelion, sans-serif;
       font-style: normal;
@@ -181,20 +190,38 @@
       text-align: justify;
       color: #777777; }
 
-.passer-part {
+.passer {
   display: flex;
-  margin-top: 259px; }
-  .passer-part-description {
+  margin-top: 280px; }
+  .passer-part {
     margin-top: 111px;
     margin-left: 130px; }
-    .passer-part-description-info {
+    .passer-part-header {
+      max-width: 447px; }
+      .passer-part-header-txt {
+        font-family: Gelion, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+        color: #828282; }
+      .passer-part-header-title {
+        font-family: Gelion, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 43px;
+        color: #333333; }
+    .passer-part-description {
       font-family: Arial, Helveticpxa, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
       line-height: 21px;
       color: #777777;
-      margin-right: 116px; }
+      margin-right: 116px;
+      margin-top: 20px; }
 
 .participate-part {
   text-align: center;
@@ -228,14 +255,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  margin-top: 87px; }
   .participate-group-one {
     display: flex;
     grid-template-columns: repeat();
     width: 100%;
     max-width: 778px;
     height: 52px;
-    margin-top: 100px;
     justify-content: space-between; }
   .participate-group-two {
     display: flex;

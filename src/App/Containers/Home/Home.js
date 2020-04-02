@@ -46,7 +46,7 @@ class Home extends Component {
             <div className="hero-ourvision-label">
               <span>Our Vision</span>
             </div>
-            <img className="hero-ourvision-img" src={ourvisionImg}></img>
+            <img className="hero-ourvision-img" src={ourvisionImg} alt="overvision"></img>
           </div>
           <div className="hero-choosenewbrands">
             <div className="hero-choosenewbrands-title">
@@ -63,28 +63,28 @@ class Home extends Component {
           <div className="report-mark">
             <span>N</span>
           </div>
-          <div className="report-description">
+          <div className="report-part-description">
             <p>
               “L'enjeu n'est pas d'aller plus loin et de faire moins cher, c'est d'automatiser la production en inventant la machine qui permettra d'aller plus vite et de faire mieux”
                         </p>
           </div>
-          <div className="report-auth">
-            <div className="name">
+          <div className="report-part-auth">
+            <div className="report-part-auth-name">
               <span>Guillaume Gibault</span>
             </div>
-            <div className="job">
+            <div className="report-part-auth-job">
               <span>Dirigeant Le Slip Français</span>
             </div>
           </div>
         </div>
         <div className="founder">
-          <img src={founderImg} alt="Jessy BIGOT"/>
+          <img src={founderImg} alt="Jessy BIGOT" />
           <div className="founder-info">
             <div className="founder-info-name">
               <span> Jessy BIGOT</span>
             </div>
             <div className="founder-info-detail">
-              <p>/ President & Fondater</p>
+              <p className="founder-info-detail-job">/ President & Fondater</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla vel erat id eleifend. Nullam imperdiet tempor lectus, eget volutpat lacus commodo vel.</p>
             </div>
           </div>
@@ -95,48 +95,48 @@ class Home extends Component {
               <span> Charlotte Martinez</span>
             </div>
             <div className="director-info-detail">
-              <p>/ Directrice Générale</p>
+              <p  className="director-info-detail-job">/ Directrice Générale</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla vel erat id eleifend. Nullam imperdiet tempor lectus, eget volutpat lacus commodo vel.</p>
             </div>
           </div>
-          <img src={directorImg} />
+          <img src={directorImg} alt="director"/>
         </div>
         <div className="challenge-part">
-          <div className="challenge-part-title">
-            <span className="challenge-txt">The Challenge</span>
+          <div className="challenge-part-header">
+            <span className="challenge-part-header-txt">The Challenge</span>
             <br></br>
-            <span className="challenge-title">/ Faire entrer notre industrie dans le 21e siècle</span>
+            <span className="challenge-part-header-title">/ Faire entrer notre industrie dans le 21e siècle</span>
           </div>
           <div className="challenge-part-group">
-            <div className="challenge-part-one">
+            <div className="challenge-part-group-mention">
               <p>
                 “Some of our goals with the migration where to improve workflow efficiencies, empower site producers to make changes with a full preview of their impact, and cut the time it takes to build out a section of the site from days to hours.”
-                            </p>
+              </p>
               <p>
                 — Weston Ruter, CTO at XWP
-                            </p>
+              </p>
             </div>
-            <div className="challenge-part-two">
+            <div className="challenge-part-group-description">
               <p>
                 In 2014, News Corp Australia was grappling with ongoing development, maintenance, and administration challenges related to their existing publishing platforms.
-                            </p>
+              </p>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                            </p>
+              </p>
             </div>
           </div>
         </div>
-        <div className="passer-part">
+        <div className="passer">
           <img src={passerImg} alt="Passer" />
-          <div className="passer-part-description">
-            <div className="challenge-part-title">
-              <span className="challenge-txt">The Challenge</span>
+          <div className="passer-part">
+            <div className="passer-part-header">
+              <span className="passer-part-header-txt">The Solution</span>
               <br></br>
-              <span className="challenge-title">/ Passer de la théorie à la pratique</span>
+              <span className="passer-part-header-title">/ Passer de la théorie à la pratique</span>
             </div>
-            <div className="passer-part-description-info">
+            <div className="passer-part-description">
               <p>VIP worked with partner agency XWP on a yearlong migration of 15 major web properties to WordPress. Thus began one of the most significant technical undertakings in the company’s history. The size, scale, and complexity of the News Corp Australia migration were unlike any of its kind to date.
-                            </p>
+              </p>
               <p>To bring all the brands to a single platform, XWP simplified the sites’ overall anatomy by consolidating several markup languages from the existing web properties into a single structure. This consolidation improved the sites’ performance and shortened the learning curve for News Corp Australia’s internal development team. </p>
               <p>Incorporating a core suite of trusted plugins and custom publishing tools deepened the production team’s capability to create, without having to call on IT for technical support.</p>
             </div>

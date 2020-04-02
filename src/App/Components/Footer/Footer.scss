@@ -8,23 +8,24 @@
   padding-left: 108px;
   font-family: Arial, Helvetica, sans-serif;
 
-  .logo-part {
-    padding-top: 17px;
+  &-logo-part {
+    padding-top: 20px;
     display: block;
 
-    .logo {
+    &-logo {
       font-size: 22px;
     }
   
-    .social-link-icons {
+    &-social-links {
       display: flex;
       height: 10px;
       max-width: 80px;
       justify-content: space-between;
       color: $gray5;
-      margin-top: 14px;
-      margin-bottom: 26px;
-      .linkedin-icon {
+      margin-top: 16px;
+      margin-bottom: 27px;
+
+      &-linkedin {
         font-size: 10px;
       }
 
@@ -39,10 +40,11 @@
       }
     }
 
-    .copyright {
-      color: $gray1;
-      font-size: 8px;
+    &-copyright {
+      font-size: 9px;
+      line-height: 11px;
       max-width: 166px;
+      color: $gray1;
 
       i {
         font-size: 6px;
@@ -51,19 +53,19 @@
     }
   }
 
-  .social-link-group {
+  &-social-link-group {
     padding-top: 5px;
     padding-left: 50px;
 
-    .header {
-      height: 23px;
-      padding-bottom: 20px;
+    &-header {
       font-size: 13px;
       font-style: normal;
+      line-height: 23px;
       color: $gray1;
+      padding-bottom: 20px;
     }
 
-    .list-items {
+    &-links {
 
       div {
         display: flex;
@@ -76,10 +78,8 @@
     }
   }
 
-  .choose-country{
+  &-choose-country{
     padding-left: 50px;
-    background-image: url("../../Assets/images/choose-country.png");
-    background-repeat: no-repeat;
   } 
   
   a {
