@@ -32,7 +32,8 @@
     padding-left: 124px;
 
     &-img {
-      z-index: 1;
+      position: relative;
+      z-index: 10;
     }
     &-label {
       position: absolute;
