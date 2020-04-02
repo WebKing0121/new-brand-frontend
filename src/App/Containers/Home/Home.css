@@ -144,7 +144,7 @@
   .challenge-part-title {
     max-width: 447px; }
     .challenge-part-title .challenge-txt {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -152,7 +152,7 @@
       letter-spacing: 0.02em;
       color: #828282; }
     .challenge-part-title .challenge-title {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 36px;
@@ -163,7 +163,7 @@
     grid-template-columns: 1fr 1fr;
     justify-content: space-between; }
     .challenge-part-group .challenge-part-one {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 18px;
@@ -173,7 +173,7 @@
       margin-right: 120px; }
     .challenge-part-group .challenge-part-two {
       margin-left: 41px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Gelion, sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 14px;
@@ -201,7 +201,7 @@
   margin-top: 254px; }
   .participate-part-title {
     margin-top: -170px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gelion, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -211,7 +211,7 @@
     .participate-part-title-txt {
       margin-bottom: 19px; }
   .participate-part-description {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gelion, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
