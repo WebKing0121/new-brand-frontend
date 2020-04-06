@@ -44,3 +44,69 @@
   justify-content: center; }
   .main-wrapper .container {
     max-width: 1439px; }
+
+
+/*  */
+* {
+  font-family: GelionFont !important;
+}
+
+.font-profile-title-color {
+  color: #333333;
+}
+
+/* .font-grey-color {
+  color: #4f4f4f;
+} */
+
+.font-greyer-color {
+  color: #828282;
+}
+
+.step-number {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.step-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.step-question {
+  font-size: 18px;
+}
+
+#required-input {
+  font-size: 18px;
+}
+
+#name-input-helper-text {
+  text-align: right;
+}
+
+img {
+  line-height: 0;
+	vertical-align: initial !important;
+}
+
+.react-tel-input .form-control {
+  margin-top: 10px !important;
+  height: 30px !important;
+  width: 310px !important;
+  border-radius: 0px !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-bottom: 1px solid grey !important;
+}
+
+.react-tel-input .form-control+div:before {
+  content : 'Phone number *' !important;
+  width: 88px !important;
+}
+
+.react-tel-input .selected-flag .flag {
+  margin-top: -7px !important;
+}

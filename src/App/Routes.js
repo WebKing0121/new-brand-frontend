@@ -3,12 +3,14 @@ import { Route, Switch } from 'react-router-dom';
 
 import Home from './Containers/Home/Home';
 import About from "./Containers/About/About";
+import Register from './Containers/Register/Register';
 import RegisterConfirmation from "./Containers/RegisterConfirmation/RegisterConfirmation";
 
 const Routes = () => (
   <Switch>
     <Route exact path='/' component={Home} />
     <Route exact path='/about' component={About} />
+    <Route path='/register' component={Register} />
     <Route exact path='/register-confirmation' component={RegisterConfirmation} />
   </Switch>
 )
