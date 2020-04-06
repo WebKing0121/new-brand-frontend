@@ -1,0 +1,17 @@
+@import '../../../_fonts.scss';
+@import '../../../Variables/_colors.scss';
+
+.register-title {
+  font-family: 'Gelion-Regular', sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1.2em;
+  color: $gray1;
+  margin-top: 100px;
+}
+
+.register-content {
+  font-family: 'Gelion-Light', sans-serif;
+  font-size: 14px;
+  color: $gray3;
+}

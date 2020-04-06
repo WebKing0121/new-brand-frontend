@@ -1,0 +1,32 @@
+@import '../../../_fonts.scss';
+@import '../../../Variables/_colors.scss';
+
+.email-input {
+
+  &-label {
+    font-family: 'Gelion-Light', sans-serif !important;
+    font-size: 14px !important;
+  }
+
+  .MuiInput-underline:before {
+    border-bottom: 1px solid $grey6 !important;
+  }
+
+  &-input {
+    width: 310px;
+    margin-right: 20px;
+
+    input {
+      font-family: 'Gelion-Regular', sans-serif;
+      font-size: 18px;
+      color: $gray1;
+    }
+  }
+
+  &-helper-text {
+    font-family: 'Gelion-Regular', sans-serif !important;
+    font-size: 11px !important;
+    margin-right: 20px !important;
+    text-align: right !important;
+  }
+}

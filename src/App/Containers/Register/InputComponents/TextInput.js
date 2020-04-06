@@ -5,6 +5,8 @@ import Input from "@material-ui/core/Input";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import { useState } from "react";
 
+import './text_input.scss';
+
 export default function TextValidator(props) {
   const [text, setText] = useState("");
   const [valid, setValid] = useState();
@@ -49,22 +51,22 @@ export default function TextValidator(props) {
   }
 
   return (
-    <FormControl style={props.formStyle}>
-      <InputLabel htmlFor="my-input" style={{ color: color }}>
+    <FormControl className="text-input">
+      <InputLabel className="text-input-label" htmlFor="" style={{ color: color }}>
         {props.label}
       </InputLabel>
       <Input
-        id="my-input"
+        className="text-input-input"
         value={text}
         onChange={handleChange}
         onBlur={handleBlur}
-        aria-describedby="my-helper-text"
-        style={props.inputStyle}
+      // aria-describedby="my-helper-text"
+      // style={props.inputStyle}
       />
       <FormHelperText
+        className="text-input-helper-text"
         error={valid}
-        id="my-helper-text"
-        style={{ textAlign: "right", color: color, fontSize: '11px' }}
+        style={{ color: color }}
       >
         {message}
       </FormHelperText>

@@ -3,12 +3,13 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/material.css';
 
 import { useState } from 'react';
-import { parsePhoneNumberFromString, isValidNumber } from 'libphonenumber-js/';
+import { isValidNumber } from 'libphonenumber-js/';
+
+import './phone_number_input.scss';
 
 export default function PhoneNumberInput(props) {
   const [phone, setPhone] = useState();
   const [message, setMessage] = useState('This field requires.');
-  const [valid, setValid] = useState();
   const [color, setColor] = useState('#BDBDBD');
 
   const onChange = phone => {
@@ -27,19 +28,17 @@ export default function PhoneNumberInput(props) {
   }
 
   return (
-    <div>
+    <div className="phone-number-input">
       <div>
-        < PhoneInput
-          style={{ width: "310px", paddingRight: "20px", color: color }}
+        <PhoneInput
+          className="phone-number-input"
           country={'fr'}
           value={phone}
           onChange={onChange}
           onBlur={onBlur}
         />
       </div>
-      <div style={{ width: '310px', textAlign: 'right', color: color }}>
-        <label style={{ fontSize: '11px' }}>{message}</label>
-      </div>
+      <p className="phone-number-input-label" style={{ color: color }}>{message}</p>
     </div>
   )
 }

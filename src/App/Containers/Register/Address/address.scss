@@ -1,0 +1,40 @@
+@import '../../../_fonts.scss';
+@import '../../../Variables/_colors.scss';
+
+.address-step {
+  padding-left: 10px;
+  background-color: white;
+  z-index: 2;
+
+  .text-input {
+    width: 420px;
+    margin-right: 40px;
+
+    &-input {
+      width: 420px ;
+    }
+  }
+
+  .address-content {
+    margin-top: 40px !important;
+
+    .address-text {
+      font-family: 'Gelion-Regular', sans-serif;
+      font-size: 18px;
+      margin-bottom: 0px;
+      color: $gray2;
+    }
+
+    .address-coodinates {
+      font-family: 'Gelion-Regular', sans-serif;
+      font-size: 14px;
+      margin-bottom: 0px;
+      color: $grey6;
+    }
+
+    .address-detail {
+      font-family: 'Gelion-Light', sans-serif;
+      font-size: 14px;
+    }
+  }
+}

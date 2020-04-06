@@ -3,6 +3,7 @@ import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import Input from "@material-ui/core/Input";
 import FormHelperText from "@material-ui/core/FormHelperText";
+import './email_input.scss';
 
 export default function EmailValidator(props) {
   const [email, setEmail] = useState("");
@@ -28,22 +29,22 @@ export default function EmailValidator(props) {
   };
 
   return (
-    <FormControl style={props.formStyle, { marginBottom: '20px' }
+    <FormControl className="email-input" style={{ marginBottom: '20px' }
     }>
-      <InputLabel htmlFor="my-input" style={{ color: color }}>
+      <InputLabel className="email-input-label" htmlFor="my-input" style={{ color: color }}>
         {props.label}
       </InputLabel>
       <Input
-        id="my-input"
+        className="email-input-input"
         value={email}
         onChange={handleChange}
         aria-describedby="my-helper-text"
         style={props.inputStyle}
       />
       <FormHelperText
+        className="email-input-helper-text"
         error={valid}
-        id="my-helper-text"
-        style={{ textAlign: "right", color: color, height: '15px', fontSize: '11px' }}
+        style={{ color: color }}
       >
         {message}
       </FormHelperText>

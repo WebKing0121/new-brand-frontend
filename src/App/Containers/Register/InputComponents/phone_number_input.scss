@@ -1,0 +1,34 @@
+@import '../../../_fonts.scss';
+@import '../../../Variables/_colors.scss';
+
+.phone-number-input {
+  width: 310px;
+  margin-right: 20px;
+
+  .react-tel-input .form-control+div:before {
+    content: 'Phone number *';
+    width: 107px;
+    font-family: 'Gelion-Light', sans-serif;
+    top: -17px;
+  }
+
+  .react-tel-input {
+    .form-control {
+      margin-top: 10px !important;
+      height: 40px !important;
+      width: 310px !important;
+      border-radius: 0px !important;
+      border-top: none !important;
+      border-right: none !important;
+      border-left: none !important;
+      border-bottom: 1px solid $grey6 !important;
+    }
+  }
+
+  &-label {
+    font-family: 'Gelion-Regular', sans-serif;
+    font-size: 11px;
+    text-align: right;
+    margin-bottom: 0px;
+  }
+}

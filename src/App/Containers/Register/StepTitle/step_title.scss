@@ -1,0 +1,14 @@
+@import '../../../_fonts.scss';
+
+.step-title {
+  &-number {
+    font-family: 'Gelion-Bold', sans-serif;
+    font-size: 48px;
+    margin-left: -2px;
+  }
+
+  &-title {
+    font-family: 'Gelion-Medium', sans-serif;
+    font-size: 24px;
+  }
+}
