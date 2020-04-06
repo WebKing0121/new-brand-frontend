@@ -1,3 +1,43 @@
+@font-face {
+  font-family: 'Gelion-Black';
+  font-weight: 700;
+  src: url("./Assets/fonts/Gelion-Black.ttf"); }
+
+@font-face {
+  font-family: 'Gelion-Bold';
+  font-weight: 700;
+  src: url("./Assets/fonts/Gelion-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Gelion-Medium';
+  font-weight: 500;
+  src: url("./Assets/fonts/Gelion-Medium.ttf"); }
+
+@font-face {
+  font-family: 'Gelion-Regular';
+  font-weight: 400;
+  src: url("./Assets/fonts/Gelion-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Gelion-Light';
+  font-weight: 300;
+  src: url("./Assets/fonts/Gelion-Light.ttf"); }
+
+@font-face {
+  font-family: 'Gelion-Thin';
+  font-weight: 300;
+  src: url("./Assets/fonts/Gelion-Thin.ttf"); }
+
+@font-face {
+  font-family: 'Gelion-SemiBold';
+  font-weight: 600;
+  src: url("./Assets/fonts/Gelion-SemiBold.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Light';
+  font-weight: 300;
+  src: url("./Assets/fonts/Roboto-Light.ttf"); }
+
 .main-wrapper {
   padding: 0 70px;
   display: flex;

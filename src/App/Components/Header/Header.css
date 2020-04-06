@@ -1,61 +1,46 @@
 .header {
   display: flex;
-  height: 76px;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
-
-.logo {
-  display: flex;
-  font-size: 23px;
-  cursor: pointer; }
-  .logo b {
-    font-family: Arial, Helvetica, sans-serif; }
-  .logo .brand-tail {
-    visibility: hidden; }
-  .logo a {
-    text-decoration: none; }
-    .logo a span {
-      color: #333333; }
-  .logo:hover .brand-tail {
-    visibility: visible; }
-
-.d-inline-block .btn {
-  padding: 0;
-  border: none;
-  background-color: white;
-  color: #333333; }
-  .d-inline-block .btn:hover {
-    color: #333333;
-    background-color: white;
-    border: none; }
-
-.d-inline-block .dropdown-menu {
-  padding: 0;
-  border: none;
-  line-height: 16px;
-  top: 1px; }
-  .d-inline-block .dropdown-menu .dropdown-item {
-    padding: 0;
-    margin-bottom: 6px; }
-
-.menu {
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333333; }
-
-.group {
-  padding-right: 70px; }
-  .group .btn {
-    color: gray; }
-
-.en {
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333333; }
-
-.auth {
-  display: flex;
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333333; }
+  align-items: flex-start; }
+  .header:hover .header_menu {
+    height: 94px; }
+  .header:hover .header_logo_region {
+    width: 110px; }
+  .header_logo {
+    padding: 26px 0;
+    cursor: pointer;
+    width: 110px; }
+    .header_logo_region {
+      width: 42px;
+      overflow-x: hidden;
+      transition: width 0.4s linear; }
+    .header_logo img {
+      width: 110px;
+      height: 18px;
+      object-fit: cover; }
+  .header_menu {
+    font-family: 'Gelion-Medium';
+    padding-top: 26px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 160px;
+    grid-row-gap: 7px;
+    font-size: 12px;
+    height: 44px;
+    max-height: 94px;
+    overflow-y: hidden;
+    transition: height 0.4s linear; }
+    .header_menu .active {
+      color: #828282; }
+    .header_menu .passive {
+      color: #e0e0e0; }
+  .header_lang {
+    padding-top: 25px;
+    font-size: 14px;
+    font-family: 'Gelion-Regular', sans-serif; }
+  .header_auth {
+    display: flex;
+    padding-top: 25px;
+    font-size: 14px;
+    font-family: 'Gelion-Regular', sans-serif; }

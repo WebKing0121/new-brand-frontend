@@ -1,64 +1,48 @@
-import React, { useState } from 'react';
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import React from 'react';
 import './Header.css';
+import logoImg from '../../Assets/images/logo2.png';
 
-const PageDropDown = ({ label, items }) => {
-  const [ isOpened, openDropDown ] = useState(false);
-
-  const onMouseOver = () => {
-    openDropDown(true);
-  };
-
-  const onMouseLeave = () => {
-    openDropDown(false);
-  };
-
-  const toggle = () => {
-    openDropDown(!isOpened)
+const Menu = ({ activeItemIdx, onSelect, menuItems }) => {
+  if (activeItemIdx === undefined) {
+    activeItemIdx = 0;
   }
-  if(label===undefined) {
-    label = items[0];
-  }
+  activeItemIdx = activeItemIdx % 2;
 
   return (
     <React.Fragment>
-      <Dropdown
-        className="d-inline-block"
-        isOpen={isOpened}
-        onMouseOver={onMouseOver}
-        onMouseLeave={onMouseLeave}
-        toggle={toggle}
-      >
-        <DropdownToggle>
-          {label}
-        </DropdownToggle>
-        <DropdownMenu>
-          {items.map(item => (
-            <DropdownItem >
+      <div className="header_menu">
+        {menuItems.map((item, idx) => (
+          <a className={activeItemIdx === idx ? 'active' : 'passive'}>
+            <div onClick={() => onSelect(idx)}>
               {item}
-            </DropdownItem>
-          ))}
-        </DropdownMenu>
-      </Dropdown>
+            </div>
+          </a>
+        ))}
+      </div>
     </React.Fragment>
-  )
+  );
 }
 export default class Header extends React.Component {
+  menuItems = ['Home /', 'How it work', 'Our story', 'Pricing', 'Newsroom', 'Developers'];
   constructor(props) {
     super(props);
 
     this.state = {
-      homeOpen: false,
-      pricingOpen: false,
     };
   }
 
-  setHomePage = (value) => {
-    const { homeOpen } = this.state;
+  selectItem = (idx) => {
+    // const { homeOpen } = this.state;
+    // this.setState({
+    //   homeOpen: !homeOpen,
+    //   activeItemIdx: idx
+    // });
+    let temp = this.menuItems[idx % 2];
+    this.menuItems[idx % 2] = this.menuItems[idx];
+    this.menuItems[idx] = temp;
     this.setState({
-      homeOpen: !homeOpen,
-      homeValue: value
-    });
+      activeItemIdx: idx
+    })
   };
 
   setWorkPage = (value) => {
@@ -69,29 +53,43 @@ export default class Header extends React.Component {
     });
   };
 
-  render() {  
+  onMouseOver = () => {
+    this.setState({
+      openDropDown: true,
+      // homeValue: value
+    });
+  };
+
+  onMouseLeave = () => {
+    this.setState({
+      openDropDown: false,
+    });
+  };
+
+  render() {
     return (
-      <div className = "header">
-        <div className = "logo">
-          <a href = "/">
-            <span>N/<b className = "brand">B</b></span>
-            <span className="brand-tail">rands</span>
-          </a>
+      <div className="header"
+        // isOpen={isOpened}
+        onMouseOver={this.onMouseOver}
+        onMouseLeave={this.onMouseLeave}>
+        <div className="header_logo">
+          <div className="header_logo_region">
+            <img src={logoImg} alt="N/Brands" />
+          </div>
         </div>
-        <div className = "menu">
-          <PageDropDown items={['Our story', 'Newsroom']} label="Home /"/>
-        </div>
-        <div className = "group">
-          <PageDropDown items={['Pricing', 'Developers']} label="How it work"/>
-        </div>
-        <div className = "en">
+        <Menu
+          onSelect={(idx) => this.selectItem(idx)}
+          activeItemIdx={this.state.activeItemIdx}
+          menuItems={this.menuItems}
+        />
+        <div className="header_lang">
           <span>/ En</span>
         </div>
-        <div className = "auth">
-          <div className = "login">
+        <div className="header_auth">
+          <div className="login">
             <span>Login /</span>
           </div>
-          <div className = "register">
+          <div className="register">
             <span>&nbsp;Register</span>
           </div>
         </div>

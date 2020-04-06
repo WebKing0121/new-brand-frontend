@@ -1,0 +1,27 @@
+.regconfirm {
+  margin: auto;
+  max-width: 1063px; }
+  .regconfirm_description {
+    display: flex;
+    align-items: center;
+    font-family: 'Gelion-Medium', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 77px;
+    color: #1C1C1C; }
+  .regconfirm_auth {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000b3; }
+    .regconfirm_auth_line {
+      width: 41px;
+      height: 0px;
+      border: 0.5px solid #000000;
+      margin-right: 47px; }

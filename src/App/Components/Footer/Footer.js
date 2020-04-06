@@ -11,17 +11,16 @@ function Footer() {
         </div>
         <div className="footer-logo-part-social-links">
           <div>
-            <i className="fa fa-twitter"></i>
+            <a href="https://twitter.com"><i className="fa fa-twitter" /></a>
           </div>
           <div>
-            <i className="fa fa-facebook-f"></i>
+            <a href="https://facebook.com"><i className="fa fa-facebook-f" /></a>
           </div>
           <div>
-            <i className="fa fa-instagram"></i>
+            <a href="https://instagram.com"><i className="fa fa-instagram" /></a>
           </div>
-          <div className="footer-logo-social-links-linkedin">
-            {/* <i class="fa fa-linkedin-in"></i> */}
-            <span>in</span>
+          <div>
+            <a href="https://linkedin.com"><i className="fa fa-linkedin" /></a>
           </div>
         </div>
         <div className="footer-logo-part-copyright">

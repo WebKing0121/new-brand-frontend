@@ -14,7 +14,14 @@
     display: block;
 
     &-logo {
+      font-family: initial;
+      font-weight: 400;
       font-size: 22px;
+
+      b {
+        font-family: 'Gelion-Black', sans-serif;
+        font-weight: 600;
+      }
     }
   
     &-social-links {
@@ -22,27 +29,32 @@
       height: 10px;
       max-width: 80px;
       justify-content: space-between;
-      color: $gray5;
       margin-top: 16px;
       margin-bottom: 27px;
-
-      &-linkedin {
-        font-size: 6px;
-      }
 
       div {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        a {
+          color: $gray5;
+
+          &:hover {
+            color: #007bff;
+          }
+        }
       }
 
       i {
-        font-size: 10px;
+        font-size: 16px;
       }
     }
 
     &-copyright {
+      font-family: 'Gelion-Regular',sans-serif;
       font-size: 9px;
+      font-family: 400;
       line-height: 11px;
       max-width: 166px;
       color: $gray1;
@@ -57,6 +69,7 @@
   &-social-link-group {
     padding-top: 5px;
     padding-left: 50px;
+    font-family: 'Gelion-Regular',sans-serif;
 
     &-header {
       font-size: 13px;

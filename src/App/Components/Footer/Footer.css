@@ -10,25 +10,33 @@
     padding-top: 20px;
     display: block; }
     .footer-logo-part-logo {
+      font-family: initial;
+      font-weight: 400;
       font-size: 22px; }
+      .footer-logo-part-logo b {
+        font-family: 'Gelion-Black', sans-serif;
+        font-weight: 600; }
     .footer-logo-part-social-links {
       display: flex;
       height: 10px;
       max-width: 80px;
       justify-content: space-between;
-      color: #e0e0e0;
       margin-top: 16px;
       margin-bottom: 27px; }
-      .footer-logo-part-social-links-linkedin {
-        font-size: 6px; }
       .footer-logo-part-social-links div {
         display: flex;
         align-items: center;
         justify-content: center; }
+        .footer-logo-part-social-links div a {
+          color: #e0e0e0; }
+          .footer-logo-part-social-links div a:hover {
+            color: #007bff; }
       .footer-logo-part-social-links i {
-        font-size: 10px; }
+        font-size: 16px; }
     .footer-logo-part-copyright {
+      font-family: 'Gelion-Regular',sans-serif;
       font-size: 9px;
+      font-family: 400;
       line-height: 11px;
       max-width: 166px;
       color: #333333; }
@@ -37,7 +45,8 @@
         padding-right: 3px; }
   .footer-social-link-group {
     padding-top: 5px;
-    padding-left: 50px; }
+    padding-left: 50px;
+    font-family: 'Gelion-Regular',sans-serif; }
     .footer-social-link-group-header {
       font-size: 13px;
       font-style: normal;

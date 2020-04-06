@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
+import heroLogoImg from "../../Assets/images/Logo.svg";
 import ourvisionImg from "../../Assets/images/ourvision.png";
 import founderImg from "../../Assets/images/founder.png";
 import directorImg from "../../Assets/images/director.png";
@@ -44,7 +45,7 @@ class Home extends Component {
           </div>
           <div className="hero-ourvision">
             <div className="hero-ourvision-label">
-              <span>Our Vision</span>
+              <img src={heroLogoImg} alt="Our vision" />
             </div>
             <img className="hero-ourvision-img" src={ourvisionImg} alt="overvision"></img>
           </div>
@@ -95,11 +96,11 @@ class Home extends Component {
               <span> Charlotte Martinez</span>
             </div>
             <div className="director-info-detail">
-              <p  className="director-info-detail-job">/ Directrice Générale</p>
+              <p className="director-info-detail-job">/ Directrice Générale</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla vel erat id eleifend. Nullam imperdiet tempor lectus, eget volutpat lacus commodo vel.</p>
             </div>
           </div>
-          <img src={directorImg} alt="director"/>
+          <img src={directorImg} alt="director" />
         </div>
         <div className="challenge-part">
           <div className="challenge-part-header">
@@ -157,13 +158,23 @@ class Home extends Component {
         </div>
         <div className="participate-group">
           <div className="participate-group-one">
-            <img src={eubankImg} alt="European Investment Bank" />
-            <img src={bredImg} alt="Bred" />
-            <img src={bpiImg} alt="bpi" />
+            <div className="participate-group-icon eubankImg">
+              <img src={eubankImg} alt="European Investment Bank" />
+            </div>
+            <div className="participate-group-icon bredImg">
+              <img src={bredImg} alt="Bred" />
+            </div>
+            <div className="participate-group-icon bpiImg">
+              <img src={bpiImg} alt="bpi" />
+            </div>
           </div>
           <div className="participate-group-two">
-            <img src={angelImg} alt="Angels" />
-            <img src={laImg} alt="Lang" />
+            <div className="participate-group-icon angelImg">
+              <img src={angelImg} alt="Angels" />
+            </div>
+            <div className="participate-group-icon laImg">
+              <img src={laImg} alt="Lang" />
+            </div>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@
   &-ourstory {
     &-title {
       padding: 130px 0 20px 0;
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-SemiBold", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 64px;
@@ -17,9 +17,9 @@
     }
 
     &-description {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Regular", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
       line-height: 21px;
       color: $gray3;
@@ -36,16 +36,20 @@
     }
     &-label {
       position: absolute;
-      top: 314px;
-      right: -248px;
-      font-family: Gelion, sans-serif;
+      top: 136px;
+      right: -54px;
+      font-family: "Gelion-SemiBold", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 96px;
       line-height: 115px;
       color: #bdbdbd;
       opacity: 0.53;
-      transform: rotate(90deg);
+
+      img {
+        height: 437px;
+        object-fit: contain;
+      }
     }
   }
 
@@ -54,7 +58,7 @@
     padding-top: 394px;
 
     &-title {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Medium", sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
@@ -64,9 +68,9 @@
     }
 
     p {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Regular", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
       line-height: 150%;
       color: $gray3;
@@ -75,6 +79,7 @@
 }
 
 .report-mark {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 170px;
   color: #cecece;
   opacity: 0.12;
@@ -91,10 +96,10 @@
     margin-top: -140px;
     display: flex;
     justify-content: center;
-    font-family: Gelion, sans-serif;
+    font-family: "Gelion-Regular", sans-serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 23px;
+    font-weight: 400;
+    font-size: 24px;
     line-height: 40px;
     color: $gray1;
 
@@ -107,16 +112,16 @@
     margin-top: 84px;
 
     &-name {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Regular", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 18px;
       line-height: 22px;
       color: $gray2;
     }
 
     &-job {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Regular", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 9px;
@@ -136,7 +141,7 @@
     margin-left: 130px;
 
     &-name {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-SemiBold", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 36px;
@@ -145,15 +150,17 @@
     }
 
     &-detail {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Light", sans-serif;
+      font-weight: 300;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
       line-height: 17px;
       color: gray;
       margin-top: 11px;
 
       &-job {
+        font-family: "Gelion-Regular", sans-serif;
         margin-bottom: 20px;
       }
     }
@@ -172,7 +179,7 @@
     margin-left: 110px;
 
     &-name {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-SemiBold", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 34px;
@@ -181,14 +188,15 @@
     }
 
     &-detail {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Light", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
       line-height: 150%;
       color: gray;
 
       &-job {
+        font-family: "Gelion-Regular", sans-serif;
         margin-bottom: 20px;
       }
     }
@@ -204,9 +212,9 @@
     max-width: 447px;
 
     &-txt {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Regular", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
       line-height: 43px;
       letter-spacing: 0.02em;
@@ -215,7 +223,7 @@
     }
 
     &-title {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-SemiBold", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 36px;
@@ -231,7 +239,7 @@
     margin-top: 40px;
 
     &-mention {
-      font-family: Gelion, sans-serif;
+      font-family: "Merriweather", initial;
       font-style: normal;
       font-weight: 300;
       font-size: 18px;
@@ -243,7 +251,7 @@
 
     &-description {
       margin-left: 41px;
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Light", sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 14px;
@@ -264,19 +272,19 @@
 
     &-header {
       max-width: 447px;
-  
+
       &-txt {
-        font-family: Gelion, sans-serif;
+        font-family: "Gelion-Regular", sans-serif;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 14px;
         line-height: 43px;
         letter-spacing: 0.02em;
         color: $gray3;
       }
-  
+
       &-title {
-        font-family: Gelion, sans-serif;
+        font-family: "Gelion-SemiBold", sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 36px;
@@ -286,9 +294,9 @@
     }
 
     &-description {
-      font-family: Arial, Helveticpxa, sans-serif;
+      font-family: "Gelion-Regular", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
       line-height: 21px;
       color: #777777;
@@ -304,7 +312,7 @@
 
   &-title {
     margin-top: -170px;
-    font-family: Gelion, sans-serif;
+    font-family: "Gelion-SemiBold", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -318,9 +326,9 @@
   }
 
   &-description {
-    font-family: Gelion, sans-serif;
+    font-family: "Gelion-Regular", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
@@ -343,6 +351,19 @@
   margin-top: 87px;
   margin-bottom: 166px;
 
+  &-icon {
+    background-repeat: no-repeat;
+    img {
+      visibility: hidden;
+      object-fit: contain;
+    }
+
+    &:hover {
+      img {
+        visibility: visible;
+      }
+    }
+  }
 
   &-one {
     display: flex;
@@ -351,13 +372,36 @@
     max-width: 778px;
     height: 52px;
     justify-content: space-between;
+
+    .eubankImg {
+      background-image: url("../../Assets/images/eubank-passive.png");
+    }
+
+    .bredImg {
+      background-image: url("../../Assets/images/bred-passive.png");
+    }
+
+    .bpiImg {
+      background-image: url("../../Assets/images/bpi-passive.png");
+    }
   }
 
   &-two {
     display: flex;
     width: 570px;
-    height: 50px;
     margin-top: 77px;
     justify-content: space-between;
+
+    img {
+      height: 50px;
+    }
+
+    .angelImg {
+      background-image: url("../../Assets/images/angel-passive.png");
+    }
+
+    .laImg {
+      background-image: url("../../Assets/images/la-passive.png");
+    }
   }
 }

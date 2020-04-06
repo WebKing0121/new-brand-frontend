@@ -4,16 +4,16 @@
   justify-content: space-between; }
   .hero-ourstory-title {
     padding: 130px 0 20px 0;
-    font-family: Gelion, sans-serif;
+    font-family: "Gelion-SemiBold", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 64px;
     line-height: 77px;
     color: #333333; }
   .hero-ourstory-description {
-    font-family: Gelion, sans-serif;
+    font-family: "Gelion-Regular", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     color: #828282; }
@@ -25,21 +25,23 @@
       z-index: 10; }
     .hero-ourvision-label {
       position: absolute;
-      top: 314px;
-      right: -248px;
-      font-family: Gelion, sans-serif;
+      top: 136px;
+      right: -54px;
+      font-family: "Gelion-SemiBold", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 96px;
       line-height: 115px;
       color: #bdbdbd;
-      opacity: 0.53;
-      transform: rotate(90deg); }
+      opacity: 0.53; }
+      .hero-ourvision-label img {
+        height: 437px;
+        object-fit: contain; }
   .hero-choosenewbrands {
     padding-left: 130px;
     padding-top: 394px; }
     .hero-choosenewbrands-title {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Medium", sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
@@ -47,14 +49,15 @@
       color: #333333;
       padding-bottom: 15px; }
     .hero-choosenewbrands p {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Regular", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
       line-height: 150%;
       color: #828282; }
 
 .report-mark {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 170px;
   color: #cecece;
   opacity: 0.12;
@@ -69,10 +72,10 @@
     margin-top: -140px;
     display: flex;
     justify-content: center;
-    font-family: Gelion, sans-serif;
+    font-family: "Gelion-Regular", sans-serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 23px;
+    font-weight: 400;
+    font-size: 24px;
     line-height: 40px;
     color: #333333; }
     .report-part-description p {
@@ -80,14 +83,14 @@
   .report-part-auth {
     margin-top: 84px; }
     .report-part-auth-name {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Regular", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 18px;
       line-height: 22px;
       color: #4f4f4f; }
     .report-part-auth-job {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Regular", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 9px;
@@ -102,21 +105,23 @@
     max-width: 310px;
     margin-left: 130px; }
     .founder-info-name {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-SemiBold", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 36px;
       line-height: 43px;
       color: #333333; }
     .founder-info-detail {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Light", sans-serif;
+      font-weight: 300;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
       line-height: 17px;
       color: gray;
       margin-top: 11px; }
       .founder-info-detail-job {
+        font-family: "Gelion-Regular", sans-serif;
         margin-bottom: 20px; }
 
 .director {
@@ -129,20 +134,21 @@
     margin-right: 130px;
     margin-left: 110px; }
     .director-info-name {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-SemiBold", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 34px;
       line-height: 43px;
       color: #333333; }
     .director-info-detail {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Light", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
       line-height: 150%;
       color: gray; }
       .director-info-detail-job {
+        font-family: "Gelion-Regular", sans-serif;
         margin-bottom: 20px; }
 
 .challenge-part {
@@ -152,16 +158,16 @@
   .challenge-part-header {
     max-width: 447px; }
     .challenge-part-header-txt {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Regular", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
       line-height: 43px;
       letter-spacing: 0.02em;
       color: #828282;
       margin-bottom: 20px; }
     .challenge-part-header-title {
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-SemiBold", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 36px;
@@ -173,7 +179,7 @@
     justify-content: space-between;
     margin-top: 40px; }
     .challenge-part-group-mention {
-      font-family: Gelion, sans-serif;
+      font-family: "Merriweather", initial;
       font-style: normal;
       font-weight: 300;
       font-size: 18px;
@@ -183,7 +189,7 @@
       margin-right: 120px; }
     .challenge-part-group-description {
       margin-left: 41px;
-      font-family: Gelion, sans-serif;
+      font-family: "Gelion-Light", sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 14px;
@@ -200,24 +206,24 @@
     .passer-part-header {
       max-width: 447px; }
       .passer-part-header-txt {
-        font-family: Gelion, sans-serif;
+        font-family: "Gelion-Regular", sans-serif;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 14px;
         line-height: 43px;
         letter-spacing: 0.02em;
         color: #828282; }
       .passer-part-header-title {
-        font-family: Gelion, sans-serif;
+        font-family: "Gelion-SemiBold", sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 36px;
         line-height: 43px;
         color: #333333; }
     .passer-part-description {
-      font-family: Arial, Helveticpxa, sans-serif;
+      font-family: "Gelion-Regular", sans-serif;
       font-style: normal;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px;
       line-height: 21px;
       color: #777777;
@@ -229,7 +235,7 @@
   margin-top: 254px; }
   .participate-part-title {
     margin-top: -170px;
-    font-family: Gelion, sans-serif;
+    font-family: "Gelion-SemiBold", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -239,9 +245,9 @@
     .participate-part-title-txt {
       margin-bottom: 19px; }
   .participate-part-description {
-    font-family: Gelion, sans-serif;
+    font-family: "Gelion-Regular", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
@@ -259,6 +265,13 @@
   width: 100%;
   margin-top: 87px;
   margin-bottom: 166px; }
+  .participate-group-icon {
+    background-repeat: no-repeat; }
+    .participate-group-icon img {
+      visibility: hidden;
+      object-fit: contain; }
+    .participate-group-icon:hover img {
+      visibility: visible; }
   .participate-group-one {
     display: flex;
     grid-template-columns: repeat();
@@ -266,9 +279,20 @@
     max-width: 778px;
     height: 52px;
     justify-content: space-between; }
+    .participate-group-one .eubankImg {
+      background-image: url("../../Assets/images/eubank-passive.png"); }
+    .participate-group-one .bredImg {
+      background-image: url("../../Assets/images/bred-passive.png"); }
+    .participate-group-one .bpiImg {
+      background-image: url("../../Assets/images/bpi-passive.png"); }
   .participate-group-two {
     display: flex;
     width: 570px;
-    height: 50px;
     margin-top: 77px;
     justify-content: space-between; }
+    .participate-group-two img {
+      height: 50px; }
+    .participate-group-two .angelImg {
+      background-image: url("../../Assets/images/angel-passive.png"); }
+    .participate-group-two .laImg {
+      background-image: url("../../Assets/images/la-passive.png"); }
