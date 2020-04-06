@@ -11,7 +11,7 @@ import bredImg from "../../Assets/images/bred.png";
 import bpiImg from "../../Assets/images/bpi.png";
 import angelImg from "../../Assets/images/angel.png";
 import laImg from "../../Assets/images/la.png";
-import './Home.css';
+import './Home.scss';
 
 class Home extends Component {
   constructor() {
