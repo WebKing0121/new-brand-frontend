@@ -2,24 +2,34 @@
 @import '../../../Variables/_colors.scss';
 
 .company-info {
-  .step-question {
-    font-family: 'Gelion-Regular', sans-serif;
-    font-size: 18px;
-  }
+  background-color: white;
+  z-index: 2;
 
-  .radius-button {
-    margin: 8px 8px 8px 0;
-    border-radius: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 14px;
-    text-transform: none;
-    border: 1px solid $grey6 !important;
+  .input-container {
 
-    .MuiButton-label {
+    &:last-child {
+      margin-bottom: 60px;
+    }
+
+    .step-question {
       font-family: 'Gelion-Regular', sans-serif;
+      font-size: 18px;
+    }
+
+    .radius-button {
+      margin: 8px 8px 8px 0;
+      border-radius: 50px;
+      padding-left: 40px;
+      padding-right: 40px;
       font-size: 14px;
-      color: $gray1;
+      text-transform: none;
+      border: 1px solid $grey6 !important;
+
+      .MuiButton-label {
+        font-family: 'Gelion-Regular', sans-serif;
+        font-size: 14px;
+        color: $gray1;
+      }
     }
   }
 }

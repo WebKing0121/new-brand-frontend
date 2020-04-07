@@ -99,6 +99,7 @@ export default class Address extends Component {
           </Grid>
           <Grid item lg={1}></Grid>
           <Grid
+            className="address-container"
             item
             lg={8}
             container

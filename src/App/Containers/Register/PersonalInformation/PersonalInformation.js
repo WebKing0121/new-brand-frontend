@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import EmailValidator from "../InputComponents/EmailInput";
@@ -7,9 +7,18 @@ import TextValidator from "../InputComponents/TextInput";
 import './personal_information.scss';
 
 export default function PersonalInformation(props) {
+  const [list, setState] = useState([
+    'Friends',
+    'Search engine',
+    'Advertising',
+    'Mass media',
+    'Social network',
+    'Other'
+  ]);
+  const [selected, setSelected] = useState(-1);
 
   return (
-    <div id="person-info" style={{ zIndex: 1 }}>
+    <div className="person-info">
       <Grid
         container
         item
@@ -27,7 +36,7 @@ export default function PersonalInformation(props) {
           ></div>
         </Grid>
         <Grid item lg={1}></Grid>
-        <Grid item lg={10} container direction="row" justify="flex-start" alignItems="center">
+        <Grid className="input-container" item lg={10} container direction="row" justify="flex-start" alignItems="center">
           <Grid>
             <TextValidator
               label="Full Name *"
@@ -58,12 +67,15 @@ export default function PersonalInformation(props) {
           </Grid>
           <p className="step-question">How did you find out about us ?</p>
           <Grid item lg={10} container justify="flex-start">
-            <Button className="radius-button">Friends</Button>
-            <Button className="radius-button">Search engine</Button>
-            <Button className="radius-button">Advertising</Button>
-            <Button className="radius-button">Mass media</Button>
-            <Button className="radius-button">Social network</Button>
-            <Button className="radius-button">Other</Button>
+            {
+              list && list.map((item, idx) => {
+                if (idx === selected) {
+                  return <Button key={idx} className="radius-button selected" onClick={() => { setSelected(idx) }}> {item}</Button>
+                } else {
+                  return <Button key={idx} className="radius-button" onClick={() => { setSelected(idx) }}> {item}</Button>
+                }
+              })
+            }
           </Grid>
         </Grid>
       </Grid >

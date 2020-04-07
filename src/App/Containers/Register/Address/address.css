@@ -42,23 +42,25 @@
   padding-left: 10px;
   background-color: white;
   z-index: 2; }
-  .address-step .text-input {
+  .address-step .address-container:last-child {
+    margin-bottom: 40px; }
+  .address-step .address-container .text-input {
     width: 420px;
     margin-right: 40px; }
-    .address-step .text-input-input {
+    .address-step .address-container .text-input-input {
       width: 420px; }
-  .address-step .address-content {
+  .address-step .address-container .address-content {
     margin-top: 40px !important; }
-    .address-step .address-content .address-text {
+    .address-step .address-container .address-content .address-text {
       font-family: 'Gelion-Regular', sans-serif;
       font-size: 18px;
       margin-bottom: 0px;
       color: #4f4f4f; }
-    .address-step .address-content .address-coodinates {
+    .address-step .address-container .address-content .address-coodinates {
       font-family: 'Gelion-Regular', sans-serif;
       font-size: 14px;
       margin-bottom: 0px;
       color: #BDBDBD; }
-    .address-step .address-content .address-detail {
+    .address-step .address-container .address-content .address-detail {
       font-family: 'Gelion-Light', sans-serif;
       font-size: 14px; }
