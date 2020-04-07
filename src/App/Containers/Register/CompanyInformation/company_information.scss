@@ -31,5 +31,13 @@
         color: $gray1;
       }
     }
+
+    .selected {
+      background-color: $gray1;
+
+      .MuiButton-label {
+        color: white;
+      }
+    }
   }
 }

@@ -2,7 +2,6 @@
 @import '../../../Variables/_colors.scss';
 
 .address-step {
-  padding-left: 10px;
   background-color: white;
   z-index: 2;
 
@@ -28,6 +27,8 @@
         font-size: 18px;
         margin-bottom: 0px;
         color: $gray2;
+        max-width: 310px;
+        word-wrap: break-word;
       }
 
       .address-coodinates {
@@ -35,11 +36,13 @@
         font-size: 14px;
         margin-bottom: 0px;
         color: $grey6;
+        word-wrap: break-word;
       }
 
       .address-detail {
         font-family: 'Gelion-Light', sans-serif;
         font-size: 14px;
+        word-wrap: break-word;
       }
     }
   }

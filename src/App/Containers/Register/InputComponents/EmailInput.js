@@ -13,6 +13,11 @@ export default function EmailValidator(props) {
 
   const handleChange = event => {
     const txt = event.target.value;
+    setEmail(event.target.value);
+  };
+
+  const handleBlur = event => {
+    const txt = event.target.value;
     const regex = /[a-zA-Z0-9_.-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]{2,})*(\.[a-zA-Z0-9_-]{2,8})/g;
     const match = regex.test(txt);
     if (match) {
@@ -25,8 +30,7 @@ export default function EmailValidator(props) {
       setColor("red");
       setMessage(props.errorMessage);
     }
-    setEmail(event.target.value);
-  };
+  }
 
   return (
     <FormControl className="email-input" style={{ marginBottom: '20px' }
@@ -38,6 +42,7 @@ export default function EmailValidator(props) {
         className="email-input-input"
         value={email}
         onChange={handleChange}
+        onBlur={handleBlur}
         aria-describedby="my-helper-text"
         style={props.inputStyle}
       />

@@ -58,3 +58,7 @@
       font-family: 'Gelion-Regular', sans-serif;
       font-size: 14px;
       color: #333333; }
+  .company-info .input-container .selected {
+    background-color: #333333; }
+    .company-info .input-container .selected .MuiButton-label {
+      color: white; }

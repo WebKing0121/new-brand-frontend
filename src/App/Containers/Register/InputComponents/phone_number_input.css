@@ -45,7 +45,7 @@
     content: 'Phone number *';
     width: 107px;
     font-family: 'Gelion-Light', sans-serif;
-    top: -17px; }
+    top: -14px; }
   .phone-number-input .react-tel-input .form-control {
     margin-top: 10px !important;
     height: 40px !important;

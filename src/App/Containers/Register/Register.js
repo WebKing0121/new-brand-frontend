@@ -23,6 +23,7 @@ export default class Register extends Component {
       checkBrandName: false,
       checkCountry: false,
       checkEmail: false,
+      checkSelectButton: false,
 
       //company information check
       checkPhoneNumber: false,
@@ -33,6 +34,7 @@ export default class Register extends Component {
       checkTechnicalTemp: false,
       checkCompanySize: false,
       checkNoOfFactories: false,
+      checkCompanySelectButton: false,
 
       titleColorGrey: '#E0E0E0',
       titleColorBlack: '#4F4F4F',
@@ -52,8 +54,8 @@ export default class Register extends Component {
   handleEmail = (isValid) => {
     this.setState({ checkEmail: isValid });
   }
-  handleSelectButton = (isValid) => {
-    // this.state({ checkCountry: isValid });
+  handlePersonSelectButton = (isValid) => {
+    this.setState({ checkSelectButton: isValid });
   }
 
   //company information check
@@ -81,15 +83,18 @@ export default class Register extends Component {
   handleNoOfFactories = (isValid) => {
     this.setState({ checkNoOfFactories: isValid });
   }
+  handleCompanySelectButton = (isValid) => {
+    this.setState({ checkCompanySelectButton: isValid });
+  }
 
   componentDidMount() {
-    const add = document.getElementById('address-step');
-    add.setAttribute("style", "height: auto;")
+    // const add = document.getElementById('address-step');
+    // add.setAttribute("style", "height: auto;")
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (!this.state.enableStep2) {
-      const isPersonalInformationValid = this.state.checkFullName && this.state.checkBrandName && this.state.checkCountry && this.state.checkEmail;
+      const isPersonalInformationValid = this.state.checkFullName && this.state.checkBrandName && this.state.checkCountry && this.state.checkEmail && this.state.checkSelectButton;
       if (isPersonalInformationValid && this.state.enableStep2 === false) {
         this.setState({ enableStep2: true });
       }
@@ -102,7 +107,8 @@ export default class Register extends Component {
         this.state.checkProductionQuantity &&
         this.state.checkTechnicalTemp &&
         this.state.checkCompanySize &&
-        this.state.checkNoOfFactories;
+        this.state.checkNoOfFactories &&
+        this.state.checkCompanySelectButton;
       if (isCompanyInformationValid) {
         this.setState({ enableStep3: true });
       }
@@ -128,7 +134,8 @@ export default class Register extends Component {
                       handleFullName: this.handleFullName,
                       handleBrandName: this.handleBrandName,
                       handleCountry: this.handleCountry,
-                      handleEmail: this.handleEmail
+                      handleEmail: this.handleEmail,
+                      handlePersonSelectButton: this.handlePersonSelectButton
                     }}
                     lineEnable={this.state.enableStep2}
                   />
@@ -149,6 +156,7 @@ export default class Register extends Component {
                       handleTechnicalTemp: this.handleTechnicalTemp,
                       handleCompanySize: this.handleCompanySize,
                       handleNoOfFactories: this.handleNoOfFactories,
+                      handleCompanySelectButton: this.handleCompanySelectButton
                     }}
                     lineEnable={this.state.enableStep3}
                   />
