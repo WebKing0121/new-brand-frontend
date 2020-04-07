@@ -40,7 +40,10 @@
 
 .address-step {
   background-color: white;
-  z-index: 2; }
+  z-index: 3; }
+  .address-step .vertical-line {
+    width: 2px;
+    height: 90%; }
   .address-step .address-container:last-child {
     margin-bottom: 40px; }
   .address-step .address-container .text-input {
@@ -48,6 +51,13 @@
     margin-right: 40px; }
     .address-step .address-container .text-input-input {
       width: 420px; }
+  .address-step .address-container .address-button {
+    border-radius: 50px;
+    font-family: 'Gelion-Regular', sans-serif !important;
+    font-size: 14px;
+    text-transform: none;
+    padding-left: 40px;
+    padding-right: 40px; }
   .address-step .address-container .address-content {
     margin-top: 40px !important; }
     .address-step .address-container .address-content .address-text {

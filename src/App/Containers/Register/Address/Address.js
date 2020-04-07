@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
-import TextValidator from "../InputComponents/TextInput";
+import TextValidator from "../InputComponents/TextInput/TextInput";
 
-import './address.scss';
+import './Address.scss';
 
 export default class Address extends Component {
   constructor(props) {
@@ -90,9 +90,8 @@ export default class Address extends Component {
         >
           <Grid item lg={1} container justify="center" alignItems="center">
             <div
+              className="vertical-line"
               style={{
-                width: "2px",
-                height: "90%",
                 backgroundColor: this.props.lineEnable ? "#828282" : "#E0E0E0",
               }}
             ></div>
@@ -114,14 +113,8 @@ export default class Address extends Component {
                 handle={this.handleChange}
               />
               <Button
-                variant="outlined"
-                style={{
-                  borderRadius: "50px",
-                  fontSize: "14px",
-                  textTransform: "none",
-                  paddingLeft: "40px",
-                  paddingRight: "40px"
-                }} onClick={() => this.handelClick()}>
+                className="address-button"
+                onClick={() => this.handelClick()}>
                 Add address
               </Button>
             </Grid>

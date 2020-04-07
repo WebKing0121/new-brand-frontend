@@ -3,7 +3,12 @@
 
 .address-step {
   background-color: white;
-  z-index: 2;
+  z-index: 3;
+  
+  .vertical-line {
+    width: 2px;
+    height: 90%;
+  }
 
   .address-container {
     &:last-child {
@@ -17,6 +22,15 @@
       &-input {
         width: 420px ;
       }
+    }
+
+    .address-button {
+      border-radius: 50px;
+      font-family: 'Gelion-Regular', sans-serif !important;
+      font-size: 14px;
+      text-transform: none;
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
     .address-content {

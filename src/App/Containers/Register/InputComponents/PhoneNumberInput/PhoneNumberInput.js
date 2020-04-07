@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/material.css';
+import { Spring, animated } from 'react-spring/renderprops';
 
 import { useState } from 'react';
 import { isValidNumber } from 'libphonenumber-js/';
 
-import './phone_number_input.scss';
+import './PhoneNumberInput.scss';
 
 export default class PhoneNumberInput extends Component {
   constructor() {
@@ -13,7 +14,8 @@ export default class PhoneNumberInput extends Component {
     this.state = {
       phone: '',
       message: 'This field requires.',
-      color: '#BDBDBD'
+      color: '#BDBDBD',
+      lineEnable: false
     }
   }
 
@@ -31,6 +33,12 @@ export default class PhoneNumberInput extends Component {
       this.setState({ message: 'Invalid phone number' })
       this.setState({ color: 'red' })
     }
+
+    this.setState({ lineEnable: false });
+  }
+
+  onFocus = () => {
+    this.setState({ lineEnable: true });
   }
 
   componentDidMount() {
@@ -44,12 +52,19 @@ export default class PhoneNumberInput extends Component {
       <div className="phone-number-input" >
         <div>
           <PhoneInput
-            className="phone-number-input"
             country={'fr'}
             value={this.state.phone}
             onChange={this.onChange}
             onBlur={this.onBlur}
+            onFocus={this.onFocus}
           />
+          <Spring native to={{ width: this.state.lineEnable ? '310px' : '0px', margin: '0 auto' }} config={{ duration: 150 }}>
+            {(props) => (
+              <animated.div className="line" style={props}>
+              </animated.div>
+            )
+            }
+          </Spring>
         </div>
         <p className="phone-number-input-label" style={{ color: this.state.color }}>{this.state.message}</p>
       </div>

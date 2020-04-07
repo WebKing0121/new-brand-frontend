@@ -38,16 +38,22 @@
   font-weight: 300;
   src: url("./Assets/fonts/Roboto-Light.ttf"); }
 
-.register-title {
-  font-family: 'Gelion-Regular', sans-serif;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 1.2em;
-  color: #333333;
-  margin-top: 100px; }
-
-.register-content {
-  font-family: 'Gelion-Light', sans-serif;
-  font-size: 14px;
-  color: #828282;
-  margin-bottom: 60px; }
+.text-input {
+  height: 90px; }
+  .text-input-label {
+    font-family: 'Gelion-Light', sans-serif !important;
+    font-size: 14px !important; }
+  .text-input .MuiInput-underline:before {
+    border-bottom: 1px solid #BDBDBD !important; }
+  .text-input-input {
+    width: 310px;
+    margin-right: 20px; }
+    .text-input-input input {
+      font-family: 'Gelion-Regular', sans-serif;
+      font-size: 18px;
+      color: #333333; }
+  .text-input-helper-text {
+    font-family: 'Gelion-Regular', sans-serif !important;
+    font-size: 11px !important;
+    margin-right: 20px !important;
+    text-align: right !important; }

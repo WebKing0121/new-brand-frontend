@@ -38,11 +38,12 @@
   font-weight: 300;
   src: url("./Assets/fonts/Roboto-Light.ttf"); }
 
-.step-title-number {
-  font-family: 'Gelion-Bold', sans-serif;
-  font-size: 48px;
-  margin-left: -2px; }
-
-.step-title-title {
-  font-family: 'Gelion-Medium', sans-serif;
-  font-size: 24px; }
+.step-title {
+  background-color: white; }
+  .step-title-number {
+    font-family: 'Gelion-Bold', sans-serif;
+    font-size: 48px;
+    margin-left: -2px; }
+  .step-title-title {
+    font-family: 'Gelion-Medium', sans-serif;
+    font-size: 24px; }

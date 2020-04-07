@@ -40,6 +40,9 @@
 
 .person-info {
   z-index: 1; }
+  .person-info .vertical-line {
+    width: 2px;
+    height: 90%; }
   .person-info .input-container:last-child {
     margin-bottom: 60px; }
   .person-info .input-container .step-question {
@@ -52,7 +55,8 @@
     padding-right: 40px;
     font-size: 14px;
     text-transform: none;
-    border: 1px solid #BDBDBD !important; }
+    border: 1px solid #BDBDBD !important;
+    outline: 0; }
     .person-info .input-container .radius-button .MuiButton-label {
       font-family: 'Gelion-Regular', sans-serif;
       font-size: 14px;

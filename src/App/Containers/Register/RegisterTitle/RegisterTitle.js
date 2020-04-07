@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import './register_title.scss'
+import './RegisterTitle.scss'
 
 export default function RegisterTitle() {
   return (

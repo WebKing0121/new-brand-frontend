@@ -1,10 +1,10 @@
 import React, { Component, useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-import EmailValidator from "../InputComponents/EmailInput";
-import TextValidator from "../InputComponents/TextInput";
+import EmailValidator from "../InputComponents/EmailInput/EmailInput";
+import TextValidator from "../InputComponents/TextInput/TextInput";
 
-import './personal_information.scss';
+import './PersonalInformation.scss';
 
 export default class PersonalInformation extends Component {
   constructor(props) {
@@ -48,9 +48,8 @@ export default class PersonalInformation extends Component {
         >
           <Grid item lg={1} container justify="center" alignItems="center">
             <div
+              className="vertical-line"
               style={{
-                width: "2px",
-                height: "90%",
                 backgroundColor: this.props.lineEnable ? "#828282" : "#E0E0E0",
               }}
             ></div>

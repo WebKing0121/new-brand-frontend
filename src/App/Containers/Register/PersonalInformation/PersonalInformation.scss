@@ -1,16 +1,20 @@
 @import '../../../_fonts.scss';
 @import '../../../Variables/_colors.scss';
 
-.company-info {
-  background-color: white;
-  z-index: 2;
+.person-info {
+  z-index: 1;
+
+  .vertical-line {
+    width: 2px;
+    height: 90%;
+  }
 
   .input-container {
 
     &:last-child {
       margin-bottom: 60px;
     }
-
+  
     .step-question {
       font-family: 'Gelion-Regular', sans-serif;
       font-size: 18px;
@@ -24,6 +28,7 @@
       font-size: 14px;
       text-transform: none;
       border: 1px solid $grey6 !important;
+      outline: 0;
 
       .MuiButton-label {
         font-family: 'Gelion-Regular', sans-serif;

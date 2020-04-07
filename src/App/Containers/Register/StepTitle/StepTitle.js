@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 
-import './step_title.scss';
+import './StepTitle.scss';
 
 export default function ProfilePersonalInformation(props) {
 

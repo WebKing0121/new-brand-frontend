@@ -1,15 +1,24 @@
-@import '../../../_fonts.scss';
-@import '../../../Variables/_colors.scss';
+@import '../../../../_fonts.scss';
+@import '../../../../Variables/_colors.scss';
 
 .phone-number-input {
   width: 310px;
   margin-right: 20px;
 
+  .input_container{
+    display: inline-block;
+    text-align: center;
+  }
+
   .react-tel-input .form-control+div:before {
     content: 'Phone number *';
-    width: 107px;
+    width: 96px;
     font-family: 'Gelion-Light', sans-serif;
     top: -14px;
+  }
+
+  .react-tel-input .form-control:focus {
+    box-shadow: none;
   }
 
   .react-tel-input {
@@ -23,6 +32,7 @@
       border-left: none !important;
       border-bottom: 1px solid $grey6 !important;
     }
+    
   }
 
   &-label {
@@ -30,5 +40,14 @@
     font-size: 11px;
     text-align: right;
     margin-bottom: 0px;
+  }
+
+  .phone-number-input-label {
+    margin-top: 5px;
+  }
+
+  .line {
+    height: 1px;
+    background-color: #3f51b5;
   }
 }
