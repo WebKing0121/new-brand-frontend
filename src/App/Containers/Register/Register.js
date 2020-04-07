@@ -15,8 +15,8 @@ export default class Register extends Component {
     super();
     this.state = {
       enableStep1: true,
-      enableStep2: true,
-      enableStep3: true,
+      enableStep2: false,
+      enableStep3: false,
       enable4: false,
       //personal information check
       checkFullName: false,
@@ -126,7 +126,7 @@ export default class Register extends Component {
           <Grid container justify="center" item lg={10}>
             <RegisterTitle></RegisterTitle>
             <StepTitle stepnum="01" title="Personal information" style={{ backgroundColor: 'white', zIndex: '-1', color: this.state.enableStep1 ? this.state.titleColorBlack : this.state.titleColorGrey }} />
-            <Spring native to={{ height: this.state.enableStep1 ? 'auto' : '0px', opacity: this.state.enableStep1 ? 1 : 0 }} config={{ duration: 500 }}>
+            <Spring native to={{ height: this.state.enableStep1 ? 'auto' : '0px', opacity: this.state.enableStep1 ? 1 : 0 }} config={{ duration: 50000 }}>
               {(props) => (
                 <animated.div style={props}>
                   <PersonalInformation
