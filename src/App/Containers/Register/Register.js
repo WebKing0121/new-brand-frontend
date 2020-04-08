@@ -15,8 +15,8 @@ export default class Register extends Component {
     super();
     this.state = {
       enableStep1: true,
-      enableStep2: false,
-      enableStep3: false,
+      enableStep2: true,
+      enableStep3: true,
       enable4: false,
       //personal information check
       checkFullName: false,

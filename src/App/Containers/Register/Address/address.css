@@ -52,12 +52,18 @@
     .address-step .address-container .text-input-input {
       width: 420px; }
   .address-step .address-container .address-button {
+    margin: 8px 8px 37px 0;
     border-radius: 50px;
-    font-family: 'Gelion-Regular', sans-serif !important;
+    padding-left: 40px;
+    padding-right: 40px;
     font-size: 14px;
     text-transform: none;
-    padding-left: 40px;
-    padding-right: 40px; }
+    border: 1px solid #BDBDBD !important;
+    outline: 0; }
+  .address-step .address-container .MuiButton-label {
+    font-family: 'Gelion-Regular', sans-serif;
+    font-size: 14px;
+    color: #333333; }
   .address-step .address-container .address-content {
     margin-top: 40px !important; }
     .address-step .address-container .address-content .address-text {
