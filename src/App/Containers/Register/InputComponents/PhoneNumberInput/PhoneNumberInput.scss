@@ -23,14 +23,16 @@
 
   .react-tel-input {
     .form-control {
-      margin-top: 10px !important;
-      height: 40px !important;
-      width: 310px !important;
-      border-radius: 0px !important;
-      border-top: none !important;
-      border-right: none !important;
-      border-left: none !important;
-      border-bottom: 1px solid $grey6 !important;
+      margin-top: 10px;
+      height: 40px ;
+      width: 310px ;
+      border-radius: 0px ;
+      border-top: none ;
+      border-right: none ;
+      border-left: none ;
+      border-bottom: 1px solid $grey6 ;
+      font-family: 'Gelion-Regular', sans-serif;
+      font-size: 18px;
     }
     
   }

@@ -15,8 +15,8 @@ export default class Register extends Component {
     super();
     this.state = {
       enableStep1: true,
-      enableStep2: true,
-      enableStep3: true,
+      enableStep2: false,
+      enableStep3: false,
       enable4: false,
       //personal information check
       checkFullName: false,
@@ -125,7 +125,7 @@ export default class Register extends Component {
           <Grid item lg={1}></Grid>
           <Grid container justify="center" item lg={10}>
             <RegisterTitle></RegisterTitle>
-            <StepTitle stepnum="01" title="Personal information" style={{ zIndex: '-1', color: this.state.enableStep1 ? this.state.titleColorBlack : this.state.titleColorGrey }} />
+            <StepTitle showDot={true} check={this.state.enableStep2} stepnum="01" title="Personal information" style={{ zIndex: '-1', color: this.state.enableStep1 ? this.state.titleColorBlack : this.state.titleColorGrey }} />
             <Spring native to={{ height: this.state.enableStep1 ? 'auto' : '0px', opacity: this.state.enableStep1 ? 1 : 0 }}>
               {(props) => (
                 <animated.div style={props}>
@@ -142,7 +142,7 @@ export default class Register extends Component {
                 </animated.div>
               )}
             </Spring>
-            <StepTitle stepnum="02" title="Company information" style={{ zIndex: '1', color: this.state.enableStep2 ? this.state.titleColorBlack : this.state.titleColorGrey }} />
+            <StepTitle showDot={this.state.enableStep2} check={this.state.enableStep3} stepnum="02" title="Company information" style={{ zIndex: '1', color: this.state.enableStep2 ? this.state.titleColorBlack : this.state.titleColorGrey }} />
             <Spring native to={{ height: this.state.enableStep2 ? 'auto' : '0px', opacity: this.state.enableStep2 ? 1 : 0 }}>
               {(props) => (
                 <animated.div style={props}>
@@ -163,7 +163,7 @@ export default class Register extends Component {
                 </animated.div>
               )}
             </Spring>
-            <StepTitle stepnum="03" title="Address" style={{ zIndex: '2', color: this.state.enableStep3 ? this.state.titleColorBlack : this.state.titleColorGrey }} />
+            <StepTitle showDot={this.state.enableStep3} check={this.state.enableStep4} stepnum="03" title="Address" style={{ zIndex: '2', color: this.state.enableStep3 ? this.state.titleColorBlack : this.state.titleColorGrey }} />
             <Spring native to={{ height: this.state.enableStep3 ? 'auto' : '0px', opacity: this.state.enableStep3 ? 1 : 0 }}>
               {(props) => (
                 <animated.div id="address-step" style={props}>

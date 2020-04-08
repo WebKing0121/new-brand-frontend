@@ -12,7 +12,12 @@ export default function ProfilePersonalInformation(props) {
       </Grid>
       <Grid item lg={1}></Grid>
       <Grid item lg={10}>
-        <p className="step-title-title">{props.title}</p>
+        <p className="step-title-title">
+          {
+            props.showDot && <span style={{ fontSize: '20px', color: props.check ? '#27AE60' : '#4F4F4F' }}> • </span>
+          }
+          {props.title}
+        </p>
       </Grid>
     </Grid>
   );

@@ -26,7 +26,7 @@ export default class PhoneNumberInput extends Component {
 
   onBlur = (e) => {
     if (isValidNumber(e.target.value)) {
-      this.setState({ message: 'Phone number verification' })
+      this.setState({ message: '✔ Phone number verification' })
       this.setState({ color: '#219653' })
       this.props.isValid(true);
     } else {
