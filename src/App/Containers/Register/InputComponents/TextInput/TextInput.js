@@ -51,7 +51,7 @@ export default function TextValidator(props) {
 
   return (
     <FormControl className="text-input">
-      <InputLabel className="text-input-label" htmlFor="" style={{ color: color }}>
+      <InputLabel className="text-input-label" htmlFor="">
         {props.label}
       </InputLabel>
       <Input

@@ -35,7 +35,7 @@ export default function EmailValidator(props) {
   return (
     <FormControl className="email-input"
     >
-      <InputLabel className="email-input-label" htmlFor="my-input" style={{ color: color }}>
+      <InputLabel className="email-input-label" htmlFor="my-input">
         {props.label}
       </InputLabel>
       <Input

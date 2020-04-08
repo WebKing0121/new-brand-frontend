@@ -15,10 +15,17 @@
     width: 96px;
     font-family: 'Gelion-Light', sans-serif;
     top: -14px;
+    cursor: auto;
   }
 
   .react-tel-input .form-control:focus {
     box-shadow: none;
+  }
+
+  .react-tel-input .form-control:focus+div:before {
+    // color: #bdbdbd;
+    color: #3f51b5;
+
   }
 
   .react-tel-input {
@@ -34,6 +41,8 @@
       font-family: 'Gelion-Regular', sans-serif;
       font-size: 18px;
     }
+
+    
     
   }
 

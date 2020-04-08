@@ -48,9 +48,12 @@
     content: 'Phone number *';
     width: 96px;
     font-family: 'Gelion-Light', sans-serif;
-    top: -14px; }
+    top: -14px;
+    cursor: auto; }
   .phone-number-input .react-tel-input .form-control:focus {
     box-shadow: none; }
+  .phone-number-input .react-tel-input .form-control:focus + div:before {
+    color: #3f51b5; }
   .phone-number-input .react-tel-input .form-control {
     margin-top: 10px;
     height: 40px;
